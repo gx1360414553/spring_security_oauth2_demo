@@ -14,7 +14,8 @@ public class OrderController {
 
     @GetMapping("/addOrder/{id}")
     public Map<String,String> addOrder(@PathVariable("id")Integer id){
-        System.out.printf("id=%s",id);
+        System.out.printf("......................id=%s",id);
+        System.out.println("");
         HashMap<String, String> map = new HashMap<>();
         map.put("status","success");
         return map;
